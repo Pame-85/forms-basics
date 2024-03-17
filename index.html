@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms</title>
+  <style>
+    table {
+      /* border-collapse: collapse; */
+      width: 90%;
+      margin: 50px;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    h2,
+    p {
+      margin-left: 60px;
+    }
+
+    hr,
+    form {
+      width: 95%;
+      margin: 50px;
+    }
+
+    fieldset {
+      width: 50%;
+    }
+
+    input {
+      width: 70%;
+    }
+
+    legend {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Formulario</h2>
+  <p>Formulario con datos personales.</p>
+  <form>
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <table>
+        <tr>
+          <th>
+            <label for="name">Nombre:</label>
+          </th>
+          <td>
+            <input type="text" id="name" name="name" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="lastname">Apellido:</label>
+          </th>
+          <td>
+            <input type="text" id="lastname" name="lastname" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="email">Email:</label>
+          </th>
+
+          <td>
+            <input type="email" id="email" name="email" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="email">Fecha nacimiento:</label>
+          </th>
+          <td>
+            <input type="date" id="birthday" name="birthday" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1">
+            <input type="submit" value="Enviar" />
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+</body>
+
+</html>
